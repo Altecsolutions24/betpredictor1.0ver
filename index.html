@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Score Predictor (Always to win!)</title>
+</head>
+<body>
+    <!-- team 1 -->
+
+    <label for="team_1_firstqtr">Team 1's 1st quarter </label><br> 
+    <input type="text" id="team_1_firstqtr" placeholder="Input team 1's first quarter"> <br> <br>
+
+    <label for="team_1_secqtr">Team 1 2nd quarter </label><br>
+    <input type="text" id="team_1_secqtr" placeholder="Input team 1's second quarter"> <br> <br>
+
+    <label for="team_1_thirdqtr">Team 1 3rd quarter </label><br>
+    <input type="text" id="team_1_thirdtqtr" placeholder="Input team 3rd second quarter"> <br> <br>
+
+    <!-- team 2 -->
+    <label for="">------------------------------------</label> <br><br>
+
+    <label for="team_2_firstqtr">Team 2 1st quarter </label><br>
+    <input type="text" id="team_2_firstqtr" placeholder="Input team 2's first quarter"> <br> <br>
+
+    <label for="team_2_secqtr">Team 2 2nd quarter </label><br>
+    <input type="text" id="team_2_secqtr" placeholder="Input team 2's second quarter"> <br> <br>
+
+    <label for="team_2_thirdqtr">Team 2 3rd quarter </label><br>
+    <input type="text" id="team_2_thirdqtr" placeholder="Input team 2's third quarter"> <br><br>
+
+    <label for="pick_time_reg">Time regulation:</label><br>
+    <input type="number" class="" id="pick_time_reg" value="30" placeholder="Enter the game's time regulation"> <br> <br>
+
+    <label for="currentfourth">Time consumed in the fourth: </label> <br>
+    <input type="text" id="currentfourth" placeholder="Time consumed in the 4th quarter"> <br>
+
+    <label for="fourthteam1">Team 1 (Left) Score: </label><br>
+    <input type="text" id="fourthteam1" placeholder="Enter the current team 1 fourth qtr score:"><br>
+
+    <label for="fourthteam2">Team 2 (right) Score: </label><br>
+    <input type="text" id="fourthteam2" placeholder="Enter the current team 2 fourth qtr score:"><br>
+
+    <button type="button" onclick="calculate()">calculate</button> <br><br>
+
+    <h1 id="leaguename">The results:</h1> <br>
+    <input type="text" id="title" placeholder="League name">
+    <button class="" type="submit" id="send">send</button><br>
+    <p id="resultteam1" style="font-weight: bolder;"></p>
+    <p id="resultteam2" style="font-weight: bolder;"></p> 
+    <p id="resultteam1fourth" style="font-weight: bolder;"></p>
+    <p id="resultteam2fourth" style="font-weight: bolder;"></p>
+    <p id="totalthird" style="font-weight: bolder;"></p>
+    <p id="possiblefourthreal" style="font-weight: bolder; color: red;"></p>
+    <p id="team1timepermin4th" style="font-weight: bolder;"></p>
+    <p id="team2timepermin4th" style="font-weight: bolder;"></p>
+    <p id="thesecondpossiblereal" style="font-weight: bolder; color: red;"></p><br><br>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
